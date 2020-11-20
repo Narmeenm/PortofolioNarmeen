@@ -1,19 +1,28 @@
-*{
-	padding:0;
-	margin:0;
-  font-family: var(--font);
+:root{
+  --font:"Comic Sans MS", cursive, sans-serif;
+  --color-text:white;
+  --textbgwhite:#3c1053;
+  --bgs1color:#F5F5F5;
+  --bordercolor:#C0C0C0;
 }
 
+
+html,body{
+  padding: 0;
+  margin: 0;
+  font-family: var(--font);
+}
 h1{
   font-family: var(--font);
 }
 
+h2{
+  font-family: var(--font);
+  color: var(--textbgwhite);
+}
+
 a:hover{
   text-decoration: none;
-}
-:root{
-  --font:"Comic Sans MS", cursive, sans-serif;
-  --color-text:white;
 }
 
 
@@ -242,8 +251,18 @@ footer{
 		margin-left: 0;
 	}
 }
-
-@media only screen and (max-width:768px) {
+/* stylesheet of section 2 :about me*/
+.s2{
+  background-color:var(--bgs1color);
+  border-top: 1px solid var(--bordercolor);
+  overflow: auto;
+}
+.main-container{
+  width: 1170px;
+  margin: 0 auto;
+}
+/* here the */
+@media only screen and (max-width:1200px) {
 
   *{
    padding:0;
@@ -312,5 +331,9 @@ footer{
   	line-height: 38px;
     background-color: red;
     float: left;
+  }
+  /* the sectons:two and three */
+  .main-container{
+    width: 95%;
   }
 }
