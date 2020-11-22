@@ -2,7 +2,7 @@
   --font:"Comic Sans MS", cursive, sans-serif;
   --color-text:white;
   --textbgwhite:#3c1053;
-  --bgs1color:#F5F5F5;
+  --bgs1color:white;
   --bordercolor:#C0C0C0;
 }
 
@@ -25,6 +25,13 @@ a:hover{
   text-decoration: none;
 }
 
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
 
 .navbar-custom {
     background: #ad5389;  /* fallback for old browsers */
@@ -90,13 +97,107 @@ a:hover{
   height: 600px;
 }
 
-footer{
-	position: fixed;
-	bottom: 0;
+/* stylesheet of section 2 :about me it is in about.html file*/
+.s2{
+	background-color:var(--bgs1color);
+	border-top: 1px solid var(--bordercolor);
+	overflow: auto;
+}
+.main-container{
+	width: 1170px;
+	margin: 0 auto;
 }
 
-  	footer { position: static; }
+.intro-wrapper{
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 35em 35em 35em;
+	grid-template-areas:
+	'about-me face-narm face-narm'
+	'web-developer pie-chart digital-transformer'
+  'gif-fact random-fact random-fact'
+	;
+}
 
+.about-me{
+	grid-area: about-me;
+  width: 150%;
+  height: auto;
+  color: var(--textbgwhite);
+}
+.about-me p{
+  font-size: 18px;
+  line-height: 2;
+}
+.about-me h2{
+  line-height: 1.9;
+  padding-top: 40px;
+}
+
+.face-narm{
+	grid-area: face-narm;
+  padding-left: 230px;
+}
+
+.face-narm img{
+  height: 450px;
+}
+.digital-transformer{
+	grid-area: digital-transformer;
+	text-align: left;
+  padding-top: 50px;
+
+}
+
+.digital-transformer,.web-developer li{
+  line-height: 2;
+  color: var(--textbgwhite);
+  font-size: 18px;
+}
+
+.web-developer{
+	grid-area: web-developer;
+	text-align: left;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.pie-chart{
+	grid-area: pie-chart;
+  padding-top: 50px;
+}
+
+.pie-chart #pieChart {
+  height:300px;
+  width: 600px;
+}
+
+.gif-fact{
+  grid-area: gif-fact;
+  width: 500px;
+}
+
+.gif-fact img{
+
+  margin-left: 70px;
+  width: 400px;
+}
+
+.random-fact{
+  grid-area: random-fact;
+  color: var(--textbgwhite);
+  text-align: left;
+  line-height: 2;
+  font-size: 20px;
+  width: 450x;
+  padding: 90px 50px 50px;
+}
+
+footer{
+	position: static;
+	bottom: 0;
+}
 
   .footer-distributed{
     background: #ad5389;  /* fallback for old browsers */
@@ -250,16 +351,6 @@ footer{
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
-}
-/* stylesheet of section 2 :about me*/
-.s2{
-  background-color:var(--bgs1color);
-  border-top: 1px solid var(--bordercolor);
-  overflow: auto;
-}
-.main-container{
-  width: 1170px;
-  margin: 0 auto;
 }
 /* here the */
 @media only screen and (max-width:1200px) {
