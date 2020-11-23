@@ -16,7 +16,7 @@ h1{
   font-family: var(--font);
 }
 
-h2{
+h2,h3,h4{
   font-family: var(--font);
   color: var(--textbgwhite);
 }
@@ -97,6 +97,55 @@ ul{
   height: 600px;
 }
 
+/* stylesheet of portfolio it is in home page*/
+.s1{
+	background-color:#F8F8FF;
+	border-top: 2px solid #F8F8FF;
+	overflow:auto;
+}
+
+.main-container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.project-wrapper{
+  margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 320px);
+	gap:20px;
+	justify-content: center;
+	padding-bottom: 50px;
+}
+
+.project{
+	border:1px solid var(--borderColor);
+	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+}
+
+.thumbnail{
+	display: block;
+	width: 100%;
+	height:180px;
+	object-fit: cover;
+}
+
+.project-preview{
+	background-color: #fff;
+	padding:15px;
+}
+
+.project-title{
+	margin: 0;
+}
+
+.project-intro{
+	font-size: 16px;
+}
+
+
 /* stylesheet of section 2 :about me it is in about.html file*/
 .s2{
 	background-color:var(--bgs1color);
@@ -122,17 +171,20 @@ ul{
 
 .about-me{
 	grid-area: about-me;
-  width: 150%;
+  width: 130%;
   height: auto;
   color: var(--textbgwhite);
 }
+
 .about-me p{
   font-size: 18px;
   line-height: 2;
+  margin-left: 70px;
 }
 .about-me h2{
   line-height: 1.9;
   padding-top: 40px;
+  margin-left: 60px;
 }
 
 .face-narm{
@@ -142,10 +194,11 @@ ul{
 
 .face-narm img{
   height: 450px;
+  margin-left: 50px;
 }
 .digital-transformer{
 	grid-area: digital-transformer;
-	text-align: left;
+	align-items: center;
   padding-top: 50px;
 
 }
@@ -158,7 +211,6 @@ ul{
 
 .web-developer{
 	grid-area: web-developer;
-	text-align: left;
   padding-top: 50px;
   padding-left: 20px;
 }
