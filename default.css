@@ -5,9 +5,17 @@
   --bgs1color:white;
   --bordercolor:#C0C0C0;
 }
+html {
+  box-sizing: border-box;
+}
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-html,body{
+body{
   padding: 0;
   margin: 0;
   font-family: var(--font);
@@ -23,6 +31,7 @@ h2,h3,h4{
 
 a:hover{
   text-decoration: none;
+  color: #ad5389;
 }
 
 a{
@@ -45,9 +54,7 @@ ul{
 .nav-link {
   color: var(--color-text);
 }
-.nav-link:hover {
-  color: #FFE4E1;
-}
+
 
 .navbar{
   height: 85px;
@@ -65,17 +72,15 @@ ul{
 
 .one-roles{
   margin-top: 150px;
-  margin-left: -10px;
+  margin-right: 100px;
   width: 200px;
+  height: 400px;
   text-align: center;
   font-size: 20px;
   color:#3c1053;
 }
 
-.one-roles a:hover{
-  color: #9370DB;
 
-}
 .two-roles{
   margin-top: 150px;
   margin-left: 190px;
@@ -83,12 +88,9 @@ ul{
   width: 200px;
   text-align: center;
   font-size: 20px;
-  color:#ad5389;
+  color:var(--textbgwhite);
 }
-.two-roles a:hover{
-  color: #9370DB;
 
-}
 
 .narm-background{
   background-image: url('img/narm.png');
@@ -139,12 +141,19 @@ ul{
 
 .project-title{
 	margin: 0;
+  font-weight: bolder;
 }
 
 .project-intro{
 	font-size: 16px;
+  color: var(--textbgwhite);
 }
 
+.visit-site{
+  padding:3px 3px 3px;
+  line-height: 2;
+  color: #8B008B;
+}
 
 /* stylesheet of section 2 :about me it is in about.html file*/
 .s2{
@@ -152,26 +161,27 @@ ul{
 	border-top: 1px solid var(--bordercolor);
 	overflow: auto;
 }
-.main-container{
-	width: 1170px;
-	margin: 0 auto;
-}
+
 
 .intro-wrapper{
-	margin-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 300px 1fr 370px;
 	grid-template-rows: 35em 35em 35em;
 	grid-template-areas:
-	'about-me face-narm face-narm'
+	'about-me about-me face-narm'
 	'web-developer pie-chart digital-transformer'
-  'gif-fact random-fact random-fact'
+  'gif-fact gif-fact random-fact'
 	;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  -webkit-box-shadow: 2px 7px 22px 27px #DCDCDC;
+  box-shadow: 2px 7px 22px 27px #DCDCDC;
 }
 
 .about-me{
 	grid-area: about-me;
-  width: 130%;
+  width: 90%;
   height: auto;
   color: var(--textbgwhite);
 }
@@ -189,18 +199,15 @@ ul{
 
 .face-narm{
 	grid-area: face-narm;
-  padding-left: 230px;
 }
 
 .face-narm img{
   height: 450px;
-  margin-left: 50px;
+  margin-left: -100px
 }
 .digital-transformer{
 	grid-area: digital-transformer;
-	align-items: center;
   padding-top: 50px;
-
 }
 
 .digital-transformer,.web-developer li{
@@ -212,7 +219,7 @@ ul{
 .web-developer{
 	grid-area: web-developer;
   padding-top: 50px;
-  padding-left: 20px;
+  margin-left: 50px;
 }
 
 .pie-chart{
@@ -222,16 +229,13 @@ ul{
 
 .pie-chart #pieChart {
   height:300px;
-  width: 600px;
 }
 
 .gif-fact{
   grid-area: gif-fact;
-  width: 500px;
 }
 
 .gif-fact img{
-
   margin-left: 70px;
   width: 400px;
 }
@@ -242,9 +246,27 @@ ul{
   text-align: left;
   line-height: 2;
   font-size: 20px;
-  width: 450x;
-  padding: 90px 50px 50px;
+  margin-left:-250px;
+  margin-top: 70px;
 }
+
+/*  portfolio.html page css style*/
+.digital-project{
+  margin-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 1000px);
+	justify-content: center;
+	padding-bottom: 50px;
+}
+
+.digital-card{
+  	border:1px solid var(--borderColor);
+  	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+  	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+  	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+}
+
+
 
 footer{
 	position: static;
@@ -411,6 +433,16 @@ footer{
    padding:0;
    margin:0;
   }
+
+
+  .digital-project{
+    margin-top: 30px;
+  	display: grid;
+  	grid-template-columns: repeat(auto-fit, 680px);
+  	justify-content: center;
+  	padding-bottom: 50px;
+  }
+
   .navbar-brand img{
     border-radius: 50%;
     width: 165px;
@@ -437,7 +469,8 @@ footer{
   }
 
   .one-roles{
-    margin:150px 0px 0px;
+    margin-top: 150px;
+    margin-right: 50px;
   }
 
   .footer-distributed{
@@ -479,4 +512,113 @@ footer{
   .main-container{
     width: 95%;
   }
+  .intro-wrapper{
+    margin:auto;
+  	display: grid;
+  	grid-template-columns: 200px 340px 200px;
+  	grid-template-rows: 20em 20em 20em;
+  	grid-template-areas:
+  	'about-me about-me face-narm'
+  	'web-developer pie-chart digital-transformer'
+    'gif-fact gif-fact random-fact'
+  	;
+    box-shadow: none;
+  }
+
+  .about-me{
+  	grid-area: about-me;
+
+  }
+  .about-me p{
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .about-me h2{
+    line-height: 1.5;
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+
+  .face-narm img{
+    height: 300px;
+    width: 200px;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+
+  .digital-transformer h2,.web-developer h2{
+    font-size: 18px;
+  }
+  .digital-transformer,.web-developer li{
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+
+  .pie-chart #pieChart {
+    height:300px;
+    width: 300px;
+  }
+
+
+  .gif-fact img{
+    margin-left:40px;
+    width: 260px;
+  }
+
+  .random-fact{
+    grid-area: random-fact;
+    text-align: left;
+    line-height: 2;
+    font-size: 16px;
+    margin-left:-120px;
+    margin-top: 30px;
+  }
+
+  /* third section Responsive style */
+
+
+
+}
+
+@media only screen and (max-width:414px) {
+
+  *{
+   padding:0;
+   margin:0;
+  }
+
+  .one-roles{
+    margin-top:70px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .one-roles h1{
+    font-size: 16px;
+  }
+
+  .two-roles{
+    margin-top:70px;
+    margin-left: auto;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .two-roles h1{
+    font-size: 16px;
+  }
+
+  .digital-project{
+    margin-top: 30px;
+  	display: grid;
+  	grid-template-columns: repeat(auto-fit, 320px);
+  	justify-content: center;
+  	padding-bottom: 50px;
+  }
+
 }
