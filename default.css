@@ -24,7 +24,7 @@ h1{
   font-family: var(--font);
 }
 
-h2,h3,h4{
+h2,h3,h4,h5{
   font-family: var(--font);
   color: var(--textbgwhite);
 }
@@ -67,13 +67,13 @@ ul{
 }
 
 .navbar-nav{
-  margin-left: 650px;
+  margin-left: 640px;
 }
 
 .one-roles{
   margin-top: 150px;
   margin-right: 100px;
-  width: 200px;
+  width: 205px;
   height: 400px;
   text-align: center;
   font-size: 20px;
@@ -266,6 +266,26 @@ ul{
   	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 }
 
+.Mdblab-img{
+	display: block;
+	width: 100%;
+	height:400px;
+	object-fit: fill;
+}
+
+.title-h5{
+  margin-left:100px;
+  font-size:30px;
+  font-weight:bolder;
+}
+
+.title-h5-digital{
+  margin-bottom:40px;
+  font-size:30px;
+  font-weight:bolder;
+}
+
+
 
 
 footer{
@@ -454,7 +474,6 @@ footer{
   }
 
   .navbar-nav{
-    list-style-type: none;
     height: 60px;
     margin: 0px;
     display: inline;
@@ -613,12 +632,30 @@ footer{
     font-size: 16px;
   }
 
+ /*the portfolio page style for iphone 6 plus */
   .digital-project{
     margin-top: 30px;
   	display: grid;
   	grid-template-columns: repeat(auto-fit, 320px);
   	justify-content: center;
   	padding-bottom: 50px;
+  }
+
+  .Mdblab-img{
+  	object-fit: cover;
+  }
+
+  .digital-project h5{
+    font-size: 23px;
+  }
+
+  .title-h5{
+    margin-left:50px;
+    font-size: 23px;
+  }
+
+  .title-h5-digital{
+    font-size:23px;
   }
 
 }
