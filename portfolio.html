@@ -35,8 +35,8 @@
                 <a class="nav-link" href="portfolio.html">portfolio</a>
               </li>
                  <li class="nav-item">
-                   <span id="email-tooltip" tooltip="click to copy my email address to your clipboard 😀">
-                      <a id ="email" class="nav-link" data-clipboard-text = "Narmeenmassalha4975@gmail.com"><i class="fas fa-lg fa-envelope"></i></a>
+                   <span id="email-tooltip" class="note" data-toggle="tooltip" title="click to copy my email address to your clipboard 😀">
+                      <a id="email" class="nav-link" data-clipboard-text = "Narmeenmassalha4975@gmail.com"><i class="fas fa-lg fa-envelope"></i></a>
                    </span>
                  </li>
                  <li class="nav-item">
@@ -150,27 +150,16 @@
               <p class="footer-company-name">© 2020 Narmeen Massalha</p>
       			</div>
       </footer>
-     <script src="javascript.js"></script>
-     <script type="text/javascript">
-      $(document).ready(function() {
-        // Copy email address to clipboard
-         var clipboard = new ClipboardJS('#email');
 
-         clipboard.on('success', function(e) {
-             $('#email-tooltip').attr("tooltip", "Yay! My email address has been copied to your clipboard ✅");
-             $('#email-tooltip').addClass('success');
 
-             // Reset
-             $('#email-tooltip').mouseleave(function() {
-
-               setTimeout( function(){
-               $('#email-tooltip').attr("tooltip", "Click to copy my email address to your clipboard 😀");
-                 $('#email-tooltip').removeClass('success');
-             }, 300);
-           });
-             e.clearSelection();
-         });
-        });
-      </script>
   </body>
+  <script src="javascript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+  <script src="javascript.js"></script>
+  <script>
+    let clipboard = new ClipboardJS('#email');
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 </html>

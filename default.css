@@ -51,20 +51,20 @@ ul{
   margin-left: 350px;
   margin-bottom: 15px;
 }
+
 .nav-link {
   color: var(--color-text);
+  margin-left:10px;
+  margin-top: 10px;
+  font-size: 20px;
 }
+
 
 
 .navbar{
   height: 85px;
 }
 
-.nav-link{
-  margin-left:10px;
-  margin-top: 10px;
-  font-size: 20px;
-}
 
 .navbar-nav{
   margin-left: 640px;
