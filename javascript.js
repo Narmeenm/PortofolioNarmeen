@@ -5,7 +5,7 @@
       data: {
         labels: ["digital Transformer","Web developer"],
         datasets: [{
-          data: [80,120],
+          data: [42,58],
           backgroundColor: ["#ad5389","#3c1053"],
           hoverBackgroundColor: ["#D8BFD8", "#EE82EE"]
         }]
