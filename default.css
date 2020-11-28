@@ -4,6 +4,7 @@
   --textbgwhite:#3c1053;
   --bgs1color:white;
   --bordercolor:#C0C0C0;
+  --pagemixcolor:linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 html {
   box-sizing: border-box;
@@ -28,9 +29,10 @@ h1{
   font-family: var(--font);
 }
 
-h2,h3,h4,h5{
+h2,h3,h4,h5,h6{
   font-family: var(--font);
   color: var(--textbgwhite);
+  font-size: 25px;
 }
 
 a:hover{
@@ -297,9 +299,71 @@ ul{
   font-size:30px;
   font-weight:bolder;
 }
+.contact-wrapper{
+  margin-top: 20px;
+}
 
+#contact-form{
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
 
+  padding: 15px;
+  border-radius: 5px;
+  background: var(--pagemixcolor);
+  margin-bottom: 70px;
+  height: 600px;
+  -webkit-box-shadow: 22px 28px 20px -1px rgba(128,69,123,0.45);
+  box-shadow: 22px 28px 20px -1px rgba(128,69,123,0.45);
+}
 
+#submit-btn{
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--color-text);
+  border:none;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease 0s;
+  background: #ad5389;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,#FFFAFA, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,  #FFFAFA, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#submit-btn:hover{
+  color: var(--textbgwhite);
+  background: #FFC0CB;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.input-field{
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 14px;
+}
+
+#contact-form label{
+  line-height: 2.7em;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+#contact-form textarea{
+  min-height: 150px;
+  font-size: 14px;
+}
 
 footer{
 	position: static;
