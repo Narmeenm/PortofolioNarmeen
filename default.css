@@ -42,6 +42,7 @@ a:hover{
 
 a{
   text-decoration: none;
+  color: var(--textbgwhite);
 }
 
 ul{
@@ -83,7 +84,7 @@ ul{
   height: 400px;
   text-align: center;
   font-size: 20px;
-  color:#3c1053;
+  color:var(--textbgwhite);
 }
 
 
