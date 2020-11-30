@@ -53,18 +53,18 @@
          <div class="main-container">
            <div class="contact-wrapper">
                <h6 style="text-align:center; line-height:3;">Get In Touch</h6>
-               <form id="contact-form">
+               <form id="contact-form" name="myform" onsubmit="return validateForm()">
                    <label>Name</label>
                    <input class="input-field" type="text" name="name">
 
                    <label>Subject</label>
-                   <input class="input-field" type="text" name="subject">
+                   <input class="input-field" type="text" name="title">
 
                    <label>Email</label>
                    <input class="input-field" type="text" name="email">
 
                    <label>Massage</label>
-                   <textarea class="input-field" name="subject"></textarea>
+                   <textarea class="input-field" id="text" name="subject"></textarea>
 
                    <input id="submit-btn" type="submit" value="Send">
 
@@ -127,4 +127,5 @@
       $('[data-toggle="tooltip"]').tooltip();
     });
   </script>
+
 </html>
