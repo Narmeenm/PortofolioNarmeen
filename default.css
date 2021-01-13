@@ -305,7 +305,11 @@ ul{
 .contact-wrapper{
   margin-top: 20px;
 }
-
+.contact-wrapper h6{
+  text-align:center;
+  line-height:3;
+  font-size:35px;
+}
 #contact-form{
   display: block;
   max-width: 600px;
@@ -328,7 +332,7 @@ ul{
   color: var(--color-text);
   border:none;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 22px;
   transition: all 0.4s ease 0s;
   background: #ad5389;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right,#FFFAFA, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
@@ -357,8 +361,8 @@ ul{
 }
 
 #contact-form label{
-  line-height: 2.7em;
-  font-size: 16px;
+  line-height: 2.5em;
+  font-size: 20px;
   color: var(--color-text);
 }
 
