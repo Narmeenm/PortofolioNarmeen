@@ -32,7 +32,10 @@ h1{
 h2,h3,h4,h5,h6{
   font-family: var(--font);
   color: var(--textbgwhite);
-  font-size: 30px;
+  font-size: 35px;
+}
+h5{
+  font-weight:bold;
 }
 
 a:hover{
@@ -124,6 +127,9 @@ ul{
   margin-left:100px;
   font-weight:bolder;
 }
+.title-h5{
+  padding-left:8%;
+}
 
 .project-wrapper{
   margin-top: 50px;
@@ -131,7 +137,7 @@ ul{
 	grid-template-columns: repeat(auto-fit, 320px);
 	gap:20px;
 	justify-content:flex-start;
-  padding-left: 8.3%;
+  padding-left: 8%;
 	padding-bottom: 50px;
 }
 
@@ -157,6 +163,7 @@ ul{
 .project-title{
 	margin: 0;
   font-weight: bolder;
+  font-size:30px;
 }
 
 .project-intro{
@@ -291,17 +298,6 @@ ul{
 	object-fit: fill;
 }
 
-.title-h5{
-  margin-left:100px;
-  font-size:30px;
-  font-weight:bolder;
-}
-
-.title-h5-digital{
-  margin-bottom:40px;
-  font-size:30px;
-  font-weight:bolder;
-}
 .contact-wrapper{
   margin-top: 20px;
 }
@@ -534,7 +530,15 @@ footer{
    margin:0;
   }
 
-
+  h2{
+    font-size: 28px;
+  }
+  .title-h5{
+    padding-left: 4%;
+  }
+   .project-wrapper{
+     padding-left:4%;
+   }
   .digital-project{
     margin-top: 30px;
   	display: grid;
@@ -716,12 +720,6 @@ footer{
     margin-top: 30px;
   }
 
-  /* third section Responsive style */
-
-  .title-h5{
-    margin-left: 30px;
-  }
-
 }
 
 @media only screen and (max-width:414px) {
@@ -836,6 +834,12 @@ footer{
     margin-left:80px;
     margin-top: 20px;
   }
+  .title-h5{
+    padding-left: 11%;
+  }
+   .project-wrapper{
+     padding-left:11%;
+   }
 
   /*style for iphone 6 plus of the footer */
   .footer-distributed{
@@ -874,19 +878,6 @@ footer{
 
   .Mdblab-img{
   	object-fit: cover;
-  }
-
-  .digital-project h5{
-    font-size: 23px;
-  }
-
-  .title-h5{
-    margin-left:50px;
-    font-size: 23px;
-  }
-
-  .title-h5-digital{
-    font-size:23px;
   }
 
 }
