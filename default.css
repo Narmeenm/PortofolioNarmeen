@@ -1,5 +1,5 @@
 :root{
-  --font:"Comic Sans MS", cursive, sans-serif;
+  --font:'Cormorant Garamond', serif;
   --color-text:white;
   --textbgwhite:#3c1053;
   --bgs1color:white;
@@ -32,7 +32,7 @@ h1{
 h2,h3,h4,h5,h6{
   font-family: var(--font);
   color: var(--textbgwhite);
-  font-size: 25px;
+  font-size: 28px;
 }
 
 a:hover{
@@ -63,7 +63,7 @@ ul{
   color: var(--color-text);
   margin-left:10px;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 
@@ -160,8 +160,9 @@ ul{
 }
 
 .project-intro{
-	font-size: 16px;
+	font-size: 20px;
   color: var(--textbgwhite);
+
 }
 
 .visit-site{
@@ -413,13 +414,13 @@ footer{
   .footer-distributed .footer-links a{
   	display:inline-block;
   	line-height: 1.8;
-    font-size: 18px;
+    font-size: 22px;
   	color:  var(--color-text);
   }
 
   .footer-distributed .footer-company-name{
   	color:  var(--color-text);
-  	font-size: 16px;
+  	font-size: 20px;
   	font-weight: normal;
   	margin: 0;
   }
@@ -434,7 +435,7 @@ footer{
 
   .footer-distributed .footer-center i{
   	color: var(--color-text);
-  	font-size: 25px;
+  	font-size: 30px;
   	width: 30px;
   	height: 38px;
   	border-radius: 50%;
@@ -445,7 +446,7 @@ footer{
   }
 
   .footer-distributed .footer-center i.fa-envelope{
-  	font-size: 18px;
+  	font-size: 20px;
   	line-height: 38px;
   }
 
@@ -454,12 +455,12 @@ footer{
   	color: var(--color-text);
   	vertical-align: middle;
   	margin:0;
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .footer-distributed .footer-center p span{
   	font-weight: normal;
-  	font-size:18px;
+  	font-size:22px;
   	line-height:2;
     margin-top: 15px;
   }
@@ -480,7 +481,7 @@ footer{
   .footer-distributed .footer-company-about{
   	line-height: 20px;
   	color:  var(--color-text);
-  	font-size: 18px;
+  	font-size: 22px;
   	font-weight: normal;
   	margin-top: 15px;
   }
@@ -560,7 +561,7 @@ footer{
     display: inline;
   }
   .nav-link{
-    font-size: 16px;
+    font-size: 22px;
     display: inline;
   }
 
@@ -587,6 +588,9 @@ footer{
   	width: auto;
     margin: 0px;
   }
+  .footer-left .footer-links a{
+    font-size: 22px;
+  }
 
   .footer-distributed .footer-center{
     display:inline-block;
@@ -595,10 +599,12 @@ footer{
     margin-top: 30px;
     margin-right: 0px;
   }
-
+  .footer-center p{
+    font-size: 22px;
+  }
 
   .footer-distributed .footer-center i{
-    font-size: 20px;
+    font-size: 22px;
     width: auto;
     height: auto;
 
@@ -610,7 +616,7 @@ footer{
   }
 
   .footer-distributed .footer-center p{
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .footer-distributed .footer-center p span{
@@ -624,7 +630,6 @@ footer{
     padding-bottom: 20px;
     margin-left: 90px;
   }
-
   /* the sectons:two and three */
   .main-container{
     width: 95%;
@@ -736,11 +741,11 @@ footer{
     width: 120px;
     height: 120px;
     text-align: center;
-    font-size: 14px;
+    font-size: 22px;
   }
   .one-roles h1{
     font-size: 18px;
-    font-weight:bolder;
+    font-weight:bold;
   }
 
   .two-roles{
