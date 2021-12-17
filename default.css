@@ -529,7 +529,6 @@ footer{
    padding:0;
    margin:0;
   }
-
   h2{
     font-size: 28px;
   }
@@ -727,6 +726,9 @@ footer{
   *{
    padding:0;
    margin:0;
+  }
+  html{
+    zoom:.8;
   }
   .narm-background{
     padding-top:10%;
